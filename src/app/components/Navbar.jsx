@@ -108,7 +108,7 @@ const Navbar = ({ windowSize }) => {
               navIconClick && windowSize.width < 1024 ? "" : " -rotate-90"
             }`}
           >
-            <a href="/Janmejay_SD24.pdf" download onClick={handleNavIconClick}>
+            <a href="/Janmejay_SD26.pdf" download onClick={handleNavIconClick}>
               Resume
             </a>
           </li>
