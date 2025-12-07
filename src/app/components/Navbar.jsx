@@ -1,20 +1,17 @@
-import React , { useState } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Link } from 'react-scroll'
-import NavMenuIcon from './NavMenuIcon'
-const Navbar = ({windowSize}) => {
-  const [navIconClick, setNavIconClick] = useState(false)
-
-
+import { Link } from "react-scroll";
+import NavMenuIcon from "./NavMenuIcon";
+const Navbar = ({ windowSize }) => {
+  const [navIconClick, setNavIconClick] = useState(false);
 
   const githubSvg = (
     <a
       target="_blank"
-      href="https://github.com/JanmejayR"
+      href="https://github.com/1jayyjayy"
       className="flex items-center justify-center w-12 h-12 text-[var(--textBody)] rounded-full hover:text-[var(--accent)]  transition duration-300"
       onClick={handleNavIconClick}
     >
-      
       <svg
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
@@ -49,7 +46,7 @@ const Navbar = ({windowSize}) => {
   const linkedinsvg = (
     <a
       target="_blank"
-      href="https://github.com/JanmejayR"
+      href="https://github.com/1jayyjayy"
       className="flex items-center justify-center w-12 h-12 text-[var(--textBody)] rounded-full hover:text-[var(--accent)] transition duration-300"
       onClick={handleNavIconClick}
     >
@@ -68,61 +65,106 @@ const Navbar = ({windowSize}) => {
     </a>
   );
 
-
-
-  function handleNavIconClick(){
-    setNavIconClick(prev=> !prev)
+  function handleNavIconClick() {
+    setNavIconClick((prev) => !prev);
   }
 
   return (
-<>
-    <NavMenuIcon navIconClick={navIconClick} handleNavIconClick={handleNavIconClick}/>
-    <motion.nav
-          className={`${windowSize.width >=1024 ? "fixed z-10 w-16 ml-16 h-screen " : `${navIconClick && windowSize.width <1024 ? " z-30 fixed flex flex-col items-center justify-center w-full h-full transition-all duration-100 ease-in-out   bg-gray-500  rounded-md  bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 gap-5 " : " hidden "}` }`}
-          initial="hidden"
-          whileInView="visible"
-          
-          transition={{ delay: windowSize.width <1024 ? 0 : 0.5, duration: windowSize.width <1024 ? 0.1 : 0.5 }}
-          variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
-          }}
+    <>
+      <NavMenuIcon
+        navIconClick={navIconClick}
+        handleNavIconClick={handleNavIconClick}
+      />
+      <motion.nav
+        className={`${
+          windowSize.width >= 1024
+            ? "fixed z-10 w-16 ml-16 h-screen "
+            : `${
+                navIconClick && windowSize.width < 1024
+                  ? " z-30 fixed flex flex-col items-center justify-center w-full h-full transition-all duration-100 ease-in-out   bg-gray-500  rounded-md  bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 gap-5 "
+                  : " hidden "
+              }`
+        }`}
+        initial="hidden"
+        whileInView="visible"
+        transition={{
+          delay: windowSize.width < 1024 ? 0 : 0.5,
+          duration: windowSize.width < 1024 ? 0.1 : 0.5,
+        }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}
+      >
+        <ul
+          className={` mt-44 text-[var(--textBody)] text-xl flex flex-col justify-start  items-center ${
+            navIconClick && windowSize.width < 1024
+              ? " space-y-10 "
+              : " space-y-20 "
+          }  font-gotham font-bold`}
         >
-         
-            
-          
-      
-      <ul className={` mt-44 text-[var(--textBody)] text-xl flex flex-col justify-start  items-center ${navIconClick && windowSize.width <1024 ? " space-y-10 ": " space-y-20 "}  font-gotham font-bold`}>
-        <li className={`nav-item ${navIconClick && windowSize.width <1024 ? "": " -rotate-90" }`} >
-        <a href="/Janmejay_SD24.pdf" download onClick={handleNavIconClick} >
-            Resume
+          <li
+            className={`nav-item ${
+              navIconClick && windowSize.width < 1024 ? "" : " -rotate-90"
+            }`}
+          >
+            <a href="/Janmejay_SD24.pdf" download onClick={handleNavIconClick}>
+              Resume
             </a>
-        </li>
-        <li className={`nav-item ${navIconClick && windowSize.width <1024 ? "": " -rotate-90" }`} >
-        <Link to="CONTACT" smooth={true} duration={1000} onClick={handleNavIconClick}>
-            Contact
+          </li>
+          <li
+            className={`nav-item ${
+              navIconClick && windowSize.width < 1024 ? "" : " -rotate-90"
+            }`}
+          >
+            <Link
+              to="CONTACT"
+              smooth={true}
+              duration={1000}
+              onClick={handleNavIconClick}
+            >
+              Contact
             </Link>
-        </li>
-        <li className={`nav-item ${navIconClick && windowSize.width <1024 ? "": " -rotate-90" }`} >
-        <Link to="PROJECTS" smooth={true} duration={1000} onClick={handleNavIconClick}>
-                   Projects
-                   </Link>
-            </li>
-        <li className={`nav-item ${navIconClick && windowSize.width <1024 ? "": " -rotate-90" }`}  >
-            <Link to="ABOUT" smooth={true} duration={1000} onClick={handleNavIconClick}>
-            About
+          </li>
+          <li
+            className={`nav-item ${
+              navIconClick && windowSize.width < 1024 ? "" : " -rotate-90"
+            }`}
+          >
+            <Link
+              to="PROJECTS"
+              smooth={true}
+              duration={1000}
+              onClick={handleNavIconClick}
+            >
+              Projects
             </Link>
-        </li>
-      </ul>
+          </li>
+          <li
+            className={`nav-item ${
+              navIconClick && windowSize.width < 1024 ? "" : " -rotate-90"
+            }`}
+          >
+            <Link
+              to="ABOUT"
+              smooth={true}
+              duration={1000}
+              onClick={handleNavIconClick}
+            >
+              About
+            </Link>
+          </li>
+        </ul>
 
-      <div className={` h-44 gap-2 mt-16 flex  ${navIconClick && windowSize.width <1024 ? " flex-row " : "flex-col"} justify-center items-center`}>
-        {githubSvg}
-        {linkedinsvg}
-      </div>
-
-
-    
-    </motion.nav>
+        <div
+          className={` h-44 gap-2 mt-16 flex  ${
+            navIconClick && windowSize.width < 1024 ? " flex-row " : "flex-col"
+          } justify-center items-center`}
+        >
+          {githubSvg}
+          {linkedinsvg}
+        </div>
+      </motion.nav>
     </>
   );
 };
