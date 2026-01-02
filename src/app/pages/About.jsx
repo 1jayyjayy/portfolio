@@ -48,7 +48,7 @@ const About = () => {
           }}
         >
         <p className=' md:text-[25px] md:w-[24rem]   lg:text-[27px] xl:text-3xl mb-2 leading-normal text-[var(--textBody)] lg:w-[28rem] xl:w-[34rem] '> Hey! This is Janmejay,</p>
-        <p className='text-[15px] w-80   md:text-[20px] md:w-[24rem]  lg:text-[22px] xl:text-2xl leading-normal text-[var(--textBody)] lg:w-[28rem] '> A Full Stack Developer that loves to explore all sorts of Tech and Frameworks hanging around the internet.  I aspire to build enterprise level softwares that satisfy the need of current software industrial standards. My current projects revolve around the MERN stack with a pinch of Nextjs. I am exploring more frameworks and trying to learn how to write and bring together best pieces of code to build something meaningful or perhaps silly,<br/> just for fun. </p>
+        <p className='text-[15px] w-80   md:text-[20px] md:w-[24rem]  lg:text-[22px] xl:text-2xl leading-normal text-[var(--textBody)] lg:w-[28rem] '> I'm a full-stack developer currently engaged in the Solana ecosystem, where I am interested in developing fast, low-level, and reliable decentralized applications. Most of my on-chain work is done in Rust, and I like digging into how things actually work under the hood, from blockchain programs to the systems around them. I spend a lot of time trying out new tools, improving how my code is structured, and putting together clean, maintainable solutions whether it’s for something serious or just a side project I’m curious about. </p>
         </motion.div>
 
 
