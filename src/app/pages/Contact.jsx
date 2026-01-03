@@ -71,7 +71,7 @@ const Contact = ({ windowSize }) => {
                 onChange={handleChange}
                 required
                 className=" w-72 sm:w-96 bg-[var(--inputBg)] px-5 min-h-8 sm:py-2 sm:min-h-12  rounded-lg placeholder:text-[var(--MyProjects)] placeholder:opacity-50 text-sm sm:text-lg text-[var(--textBody)] shadow-black-200 shadow-2xl border-2 border-transparent placeholder:text-[11px] sm:placeholder:text-lg  focus:border-[var(--textBody)] focus:outline-none "
-                placeholder="ex., Yuri Tarded"
+                placeholder="ex., John Doe"
               />
             </label>
 
@@ -86,7 +86,7 @@ const Contact = ({ windowSize }) => {
                 onChange={handleChange}
                 required
                 className=" w-72 sm:w-96 bg-[var(--inputBg)] px-5 min-h-8 sm:py-2 sm:min-h-12  rounded-lg placeholder:text-[var(--MyProjects)] placeholder:opacity-50 text-sm sm:text-lg text-[var(--textBody)] shadow-black-200 shadow-2xl border-2 border-transparent placeholder:text-[11px] sm:placeholder:text-lg  focus:border-[var(--textBody)] focus:outline-none"
-                placeholder="ex., YuriTarded@gmail.com"
+                placeholder="ex., JohnDoe@gmail.com"
               />
             </label>
 
