@@ -44,21 +44,21 @@ const projects = [
     live: "https://swiftconvo.onrender.com/",
     frameworkIcons: [],
   },
-  {
-    id: 4,
-    projectImage: {
-      imageSrc: "/projectImage4.PNG",
-      imageAlt: "Image of Fourth Project",
-      imageWidth: 1894,
-      imageHeight: 931,
-    },
-    title: "Swift Stay",
-    description:
-      "This is a MERN Stack Hotel Booking application. It uses JWT based authentication, allows users to add their own hotels by uploading its pictures and description. Users can also book hotels and write reviews about them.",
-    github: "https://github.com/1jayyjayy/SwiftStay",
-    live: "",
-    frameworkIcons: [],
-  },
+  // {
+  //   id: 4,
+  //   projectImage: {
+  //     imageSrc: "/projectImage4.PNG",
+  //     imageAlt: "Image of Fourth Project",
+  //     imageWidth: 1894,
+  //     imageHeight: 931,
+  //   },
+  //   title: "Swift Stay",
+  //   description:
+  //     "This is a MERN Stack Hotel Booking application. It uses JWT based authentication, allows users to add their own hotels by uploading its pictures and description. Users can also book hotels and write reviews about them.",
+  //   github: "https://github.com/1jayyjayy/SwiftStay",
+  //   live: "",
+  //   frameworkIcons: [],
+  // },
 ];
 
 export default projects;
